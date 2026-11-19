@@ -88,7 +88,7 @@ for mod, k in BITS_POR_SIMBOLO.items():
     rajadas = dict(zip(SNR_DB, media_desvio(mod, "Rajadas")[0]))
     snr_min = next((f"{s} dB" for s in SNR_DB if awgn[s] <= 1e-3), "acima de 14 dB")
     linhas.append(f"| {mod} | {k} | {awgn[6]:.2e} | {awgn[10]:.2e} | {awgn[14]:.2e} | {rajadas[14]:.2e} | {snr_min} |")
-with open("tabela_compromisso.md", "w") as f:
+with open("tabela_compromisso.md", "w", encoding="utf-8") as f:
     f.write("\n".join(linhas) + "\n")
 print("\n".join(linhas))
 print("\nGráficos gravados na pasta graficos/ e tabela em tabela_compromisso.md")

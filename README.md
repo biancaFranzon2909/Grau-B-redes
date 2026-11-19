@@ -2,6 +2,10 @@
 
 Simulador de comunicação digital desenvolvido em Python para a disciplina de Redes de Computadores.
 
+## Apresentação
+
+Acesse a apresentação de slides e o vídeo de execução do programa pelo link: https://canva.link/8035ectvmfg9dlh
+
 ## Arquitetura do Sistema
 
 O fluxo de simulação segue as etapas principais de um enlace digital:
